@@ -39,6 +39,7 @@ export default class PlotGeneratorMainClass extends React.Component {
         });
     }
     handlePlanetChange(selectedPlanet) {
+        //selected Person from input-select-planet 2 components down
         console.log('Plot Generator: New Planet selected ' + selectedPlanet);
         this.setState({
             backdropPlanet: selectedPlanet
