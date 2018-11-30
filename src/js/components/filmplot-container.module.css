@@ -1,0 +1,12 @@
+/*
+Styling Module for filmplot-container.js
+*/
+/* Styel for Jumbotron - Plot Container */
+.jumbotron{
+    padding-top:0;
+    padding-bottom:0;
+}
+.jumbotronContainer{
+    padding:0.5em;
+    padding-top:0;
+}

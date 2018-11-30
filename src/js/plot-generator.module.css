@@ -1,0 +1,15 @@
+/*
+Styling Module for plot-generator.js
+*/
+.h1{
+    text-align: center;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+.divHeader{
+    padding:1em;
+}
+.mainContainer{
+    max-width:70rem;
+    margin:auto;
+}
