@@ -25,7 +25,7 @@ export default class PlotGeneratorMainClass extends React.Component {
         this.handlePlanetChange = this.handlePlanetChange.bind(this);
     }
     handleFilmTitleChange(selectedFilmTitel) {
-        //selected Title from input_select-title 2 components down
+        //selected Film Title from input_select-title 2 components down
         console.log('Plot Generator: New Film Titel ' + selectedFilmTitel);
         this.setState({
             filmTitle: selectedFilmTitel
@@ -39,7 +39,7 @@ export default class PlotGeneratorMainClass extends React.Component {
         });
     }
     handlePlanetChange(selectedPlanet) {
-        //selected Person from input-select-planet 2 components down
+        //selected Planet from input-select-planet 2 components down
         console.log('Plot Generator: New Planet selected ' + selectedPlanet);
         this.setState({
             backdropPlanet: selectedPlanet
@@ -47,8 +47,6 @@ export default class PlotGeneratorMainClass extends React.Component {
     }
     render() {
         const { filmTitle, starringPerson, backdropPlanet } = this.state;
-        console.log(starringPerson);
-        console.log(backdropPlanet);
         return (
             <div className={this.classNames.mainContainer}>
                 <div className={this.classNames.divHeader}>

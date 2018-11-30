@@ -1,3 +1,8 @@
+
+/**
+ *  Text is being filtered by specified regEX condition- Persons are replaced with :insertPeople: and planets and places are replaced with :insertPlanets:.
+ * Subseqeuntly :insertPeople: is being replaced with the selected person and :insertPlanets: is being replaced with the selected planet
+ */
 import React from 'react';
 import { Fade } from 'reactstrap';
 import className from 'classnames';

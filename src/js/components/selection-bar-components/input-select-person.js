@@ -1,3 +1,7 @@
+
+/**
+ *         Input person component fetches data regarding starring persons for swapi.co/api API.
+ */
 import React from 'react';
 import { FormGroup, Label, Input } from 'reactstrap';
 import className from 'classnames';
@@ -21,7 +25,6 @@ export default class SelectPerson extends React.Component {
         this.props.onPersonChange(e.target.value);
     }
     componentDidMount() {
-        //console.log('Did mount');
         fetch('https://swapi.co/api/people/')
             .then(res => res.json())
             .then(
@@ -32,9 +35,6 @@ export default class SelectPerson extends React.Component {
                         swapiPeople: result.results
                     });
                 },
-                // Note: it's important to handle errors here
-                // instead of a catch() block so that we don't swallow
-                // exceptions from actual bugs in components.
                 (error) => {
                     this.setState({
                         isLoaded: true,
@@ -44,6 +44,7 @@ export default class SelectPerson extends React.Component {
             )
     }
     render() {
+        //persons are appended into the optional input field
         const { error, isLoaded, swapiPeople } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;

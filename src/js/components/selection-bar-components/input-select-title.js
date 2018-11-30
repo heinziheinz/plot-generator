@@ -1,3 +1,6 @@
+/**
+ *         Input person component fetches data regarding star wars film titles for swapi.co/api API.
+ */
 import React from 'react';
 import { FormGroup, Label, Input } from 'reactstrap';
 import className from 'classnames';
@@ -38,6 +41,7 @@ export default class SelectFilmTitle extends React.Component {
             )
     }
     render() {
+        //filmTiles are appended into the optional input field
         const { error, isLoaded, swapiFilmTitle } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;

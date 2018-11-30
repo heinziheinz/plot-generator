@@ -1,3 +1,7 @@
+
+/**
+ * Selection bar - contains: Input components to pick plot, the hero and planet
+ */
 import React from 'react';
 import { Form } from 'reactstrap';
 import SelectFilmTitle from './selection-bar-components/input-select-title';

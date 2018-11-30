@@ -1,3 +1,8 @@
+
+/**
+ * It`s being verified, if all free props: selected Planet, selected Person and selected film titel are selected 
+ * if not, an information is rendered, saying which options are still to choose. If all all inputfileds are selected, the text is rendered.
+ */
 import React from 'react';
 import { Fade } from 'reactstrap';
 import FilmplotFilterTextFilter from './filmplot-filter-textfilter';

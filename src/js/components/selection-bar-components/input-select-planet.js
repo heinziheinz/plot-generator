@@ -1,3 +1,7 @@
+
+/**
+ *         Input planet component fetches data regarding available planets for swapi.co/api API.
+ */
 import React from 'react';
 import { FormGroup, Label, Input } from 'reactstrap';
 import className from 'classnames';
@@ -43,6 +47,7 @@ export default class SelectPlanet extends React.Component {
             )
     }
     render() {
+        //planets are appended into the optional input field
         const { error, isLoaded, swapiPlanets } = this.state;
         if (error) {
             return <div>Error: {error.message}</div>;
