@@ -20,3 +20,5 @@ Selected-Film Componente abgeschlossen:
 Nächster Schritt: Selected Person Componente der HOC übergeben: HOC generischer machen.
 
 ... schauen, wie man testgetrieben das sekect-person weiter unterscgucht..
+
+22.01.19: Test - Driven : shallow testing funktioniert nur, wenn die "Untercomponente" in einer eigenen Datei ist.
