@@ -23,17 +23,17 @@ export default class SelectionBar extends React.Component {
       Film: fetchSwapiAPI(
         FilmTitleLoading,
         SelectedFilmTitleLoaded,
-        'https://swapi.co/api/films/'
+        'https://swapi.dev/api/films/'
       ),
       Planet: fetchSwapiAPI(
         PlanetLoading,
         SelectedPlanetLoaded,
-        'https://swapi.co/api/planets/'
+        'https://swapi.dev/api/planets/'
       ),
       People: fetchSwapiAPI(
         PersonLoading,
         SelectedPersonLoaded,
-        'https://swapi.co/api/people/'
+        'https://swapi.dev/api/people/'
       )
     };
   }
